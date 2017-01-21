@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reading json Array</title>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+</head>
+<body>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('#button').click(function(){
+			$.getJSON("json_object.json", function(data){
+				console.log(data);
+				var output = "";
+				$.each(data.student, function(idx, obj) {
+					output = output + "Name : " +  obj.name + "  Age : " + obj.age + "<br>" ;
+					
+				});
+				output2="";
+				$.each(data.teacher, function(idx, obj) {
+					output2 = output2 + "Name : " +  obj.name + "  Age : " + obj.age + "<br>" ;
+					
+				});
+
+				$('#result2').html(output2);
+				$('#result').html(output);
+
+
+
+				
+
+			});
+
+			
+		});
+
+		
+
+	});
+
+</script>
+
+<input id="button" type="button" value="Click Me">
+
+
+<div id="result"></div>
+<div id="result2"></div>
+
+</body>
+</html>

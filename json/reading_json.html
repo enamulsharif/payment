@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reading JSON data using ajax method</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	$.getJSON("jsonarray.json", function(data){
+		$(data.user).each(function(index, value){
+			$("ul").append("<li>" + " name : " + value.name + " age: "  + value.age + "</li>" );
+			//$("ul").append("<li>" + value.age  + "</li>" );
+			//$("ul").append("<li>" + value.email + "</li>" );
+
+		});
+
+	
+
+	});
+		
+</script>
+<div id="result">
+	<ul>
+	
+    </ul>
+
+</div>
+
+</body>
+</html>

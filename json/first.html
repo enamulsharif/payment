@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON</title>
+	
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		var obj1 = {user:"enamul", age: "40", country: "usa" };
+		var obj2 = {user: "eshan", age: "8", country: "usa"};
+		var obj3 = {user: "tariq", age: "44", country: "BD"};
+
+		var obj4 = { u1 : obj1, u2: obj2, u3: obj3 };
+		document.write(obj3.user);
+		document.write("<hr/>");
+		document.write(obj4.u1.user);
+		document.write("<hr/>");
+		document.write(obj4["u1"]["user"]);
+	</script>
+
+
+</body>
+</html>

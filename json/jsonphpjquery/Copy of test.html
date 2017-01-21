@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reading json Array</title>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+</head>
+<body>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('#button').click(function(){
+			$.get("process.php", function(data){
+				console.log(data);
+				var pushData = jQuery.parseJSON(data);
+				var output = "";
+				$.each(pushData, function(idx, serverData) {
+				   output = output + "customer_email : " +  serverData.customer_email + "  customer_password : " 
+				  				   + serverData.customer_password + "<br>" ;				
+				});
+				$('#result').html(output);								
+			});	
+							
+		}); // button
+    }); // last one
+
+</script>
+
+<input id="button" type="button" value="Click Me">
+
+
+<div id="result"></div>
+
+
+</body>
+</html>

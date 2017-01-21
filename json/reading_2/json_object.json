@@ -1,0 +1,17 @@
+{
+	"student" : [
+
+			{"name" : "enamul", "age" : 40, "grade" : "8th"},
+			{"name" : "eshan", "age"  : 8,  "grade" : "3rd"},
+			{"name" : "Irphan", "age" : 40, "grade" : "8th"}
+
+	],
+
+	"teacher" : [
+
+			{"name" : "Tom",    "age"  : 40, "grade"  : "8th"},
+			{"name" : "Bradly", "age"  : 8,  "grade"  : "3rd"},
+			{"name" : "John",   "age"  : 40, "grade"  : "8th"}
+
+	]
+}

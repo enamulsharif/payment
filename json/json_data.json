@@ -1,0 +1,5 @@
+{
+	"person1" : { "name" : "Enamul", "age" : 40, "email" : "enamul@yahoo.com" },
+	"person2" : { "name" : "Eshan" , "age" : 8 , "email" : "eshan@yahoo.com"  },
+	"person3" : { "name" : "Irphan", "age" : 6 , "email" : "irphan@yahoo.com" }
+}

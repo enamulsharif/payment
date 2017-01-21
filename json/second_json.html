@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$.getJSON("json_data.json", function(data){
+					$.each(data, function(key,value){
+						$("ul").append("<li>" + value.name + "</li>" );
+						$("ul").append("<li>" + value.age  + "</li>" );
+						$("ul").append("<li>" + value.email  + "</li>" );
+					});
+
+				});
+			});
+		});
+			
+		    
+		       
+
+		    
+		
+	</script>
+</head>
+<body>
+
+<br>
+
+<div id="result"><h2>Let jQuery AJAX Change This Text</h2> 
+
+<ul>
+	<li>sharif</li>
+	<li>sharifhghgh</li>
+	<li>sharifbnnbn</li>
+</ul>
+</div>
+<br>
+
+<button>Get External Content</button>
+
+</body>
+</html>
